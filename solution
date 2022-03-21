@@ -4,15 +4,13 @@ var dist; // Distancia a enemigo
 
 while (true) {
   // ---------- Ataque -------------
-
   dist = scan(an, 5); // Busca enemigo
   if (dist <= 70) { cannon(an, dist); } // Disparar
   else { an += 10; } // Cambia angulo y sigue buscando
   
   // ---------- Nado -------------
-  
   s += 2;
   if (dist <= 70) { swim(an, 20); } // Sigue al enemigo
   else { swim(s, 80); } // Nada al azar
   
-}
+  }
